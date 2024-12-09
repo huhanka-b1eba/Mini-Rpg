@@ -12,9 +12,17 @@ public class Main {
         Peaceful p1 = new Peaceful("Иван", "Калита", 10, 2, false);
         Wizard wiz1 = new Wizard("Лефантий", 25, 8, true);
 
-        System.out.println(orc1.returnStatistic());
-        wiz1.getFight(orc1);
-        System.out.println(orc1.returnStatistic());
+        // Уменьшение и отображение здоровья
+        System.out.println(knight1.returnStatistic());
+        wiz1.getFight(knight1);
+        System.out.println(knight1.returnStatistic());
 
+        System.out.println("----------------------------------------");
+
+
+        // Увеличение и отображение здоровья
+        System.out.println(p1.returnStatistic());
+        p1.toEat();
+        System.out.println(p1.returnStatistic());
     }
 }
